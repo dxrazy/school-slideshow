@@ -1,0 +1,39 @@
+.Main-Heading {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: dodgerblue;
+  margin: 0;
+  margin-top: 4em;
+  font-size: 58px;
+  position: relative;
+  animation-name: testanimation;
+  animation-duration: 4s;
+}
+/* use trasform: translate instead of top, left, etc. because browser is optimized to use transform: translate better
+*/
+@keyframes testanimation {
+  0% {
+    transform: translateX(-14em);
+    color: white;
+    opacity: 0%;
+  }
+  50% {
+    transform: translateX(0em);
+    color: white;
+  }
+  100% {
+    color: black;
+    opacity: 100%;
+  }
+}
+
+ul {
+  margin-top: 8em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.slide-header {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 36px;
+}
